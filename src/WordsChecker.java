@@ -7,7 +7,6 @@ public class WordsChecker {
     public WordsChecker(String text) {
         this.text = text;
     }
-
     public boolean hasWord(String word) {
         String[] words = text.split("\\P{IsAlphabetic}+");
         Set<String> wordsSet = new HashSet<>();
@@ -16,5 +15,5 @@ public class WordsChecker {
         }
         return wordsSet.contains(word.toLowerCase());
     }
-
 }
+
